@@ -1,0 +1,36 @@
+body {
+	background-color: #98AAD6;
+	color: #000;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	margin:0;
+	padding:0;
+	margin-right:20em;
+	margin-left:20em;
+}
+
+#control-bar {
+    margin: 0em 0em 1em;
+    list-style: none;
+    list-style-type: none;
+    text-align: right;
+    color: #eee;
+    font-size: 80%;
+    padding-bottom: 0.4em;
+}
+#control-bar li {
+    display: inline-block;
+}
+#control-bar li a {
+    color: #eee;
+    padding: 1em;
+    text-decoration: none;
+}
+#control-bar li a:hover {
+    color: #cce;
+}
+#header {
+    background-color: #333;
+    border-botton: 1px solid #111;
+    margin:0;
+    padding:0;
+}

@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="container">
+	<h1>Diurnal Email Data</h1>
+	<p>A diurnal plot will help you identify trends over time of the sending and
+		receiving of your emails. Each dot represents one email, where the x axis is the day and
+		the y axis is the time sent/received.</p>
+
+	<p>Below is both sent and received mail for <strong>{{ email.address }}@gmail.com</strong> over the last <strong>
+		{{ daysback }}</strong> days. You will find patterns emerging left-to-right, as days change, as 
+		well as vertically, as each day passes.</p>
+
+
+
+	<p></p>
+	{% comment %}
+	<img src="{% url 'simple_graph' email.address email.password %}" /> 
+	{% endcomment %}
+	<img src="{% url 'diurnal_graph' email.address email.password daysback%}" /> 
+
+
+	{% load openid %}
+	{% openid_form 'https://www.google.com/accounts/o8/id' 'login/with/google.png' %}
+
+</div>
+{% endblock %}

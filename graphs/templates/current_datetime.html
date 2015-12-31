@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% load url from future %}
+
+{% block content %}
+
+<h2>Current Date and Time</h2>
+<p>It is now {{ current_date }}.</p>
+
+<a rel="nofollow" href="{% url 'socialauth_begin' 'google' %}">Login to Google</a>
+
+{% endblock %}

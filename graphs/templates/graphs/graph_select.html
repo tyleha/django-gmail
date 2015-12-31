@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Available Graphs</h1>
+
+<div class="graph">
+  <h2><a href="{% url graphs_diurnal %}">{{ Emails by Date and Time }}</a></h2>
+</div>
+<div class="graph">
+  <h2><a href="{% url graphs_contacts %}">{{ Most Contacted }}</a></h2>
+</div>
+
+{% endblock %}
